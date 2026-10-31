@@ -33,7 +33,7 @@
 .navbar-list a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -64,7 +64,7 @@
 
 .navbar-list li i {
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.4s ease;
     cursor: pointer;
 }
@@ -115,13 +115,17 @@
     font-optical-sizing: auto;
     font-style: normal;
     color: #1B5E20;
+    font-weight: 900;
+    font-size: 60px;
     margin-top: 0px;
 }
 
-.hero-content h3, h4 {
+.hero-content h3 {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
     color: #1B5E20;
 }
 
@@ -129,13 +133,16 @@
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
     color: #1B5E20;
 }
 
 .hero-content p {
     color: #1B5E20;
-    font-family: "Zeyada", cursive;
+    font-family: "Eagle Lake", serif;
     font-weight: 400;
+    font-size: 15px;
     font-style: normal;
 }
 
@@ -177,6 +184,7 @@
     font-family: "Dancing Script", cursive;
     transition: 0.4s ease-in-out;
     cursor: pointer;
+    color: #1B5E20;
 }
 
 .order-now:hover {
@@ -185,7 +193,7 @@
     color: white;
 }
 
-/* @keyframes floatingBackground {
+@keyframes floatingBackground {
     0% {
         transform: translateY(0px);
     }
@@ -195,7 +203,7 @@
     100% {
         transform: translateY(0px);
     }
-} */
+}
 
 /* Populaer Dish */
 
@@ -285,25 +293,26 @@
 
 .popular-dish-card h2 {
     color: #1B5E20;
-    font-family: "Zeyada", cursive;
-    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    font-size: 30px;
     font-style: normal;
 }
 
 .popular-dish-card p {
     color: #1B5E20;
-    font-family: "Zeyada", cursive;
+    font-family: "Eagle Lake", serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 16px;
+    text-align: center;
     font-style: normal;
 }
 
 .popular-dish-card span {
     color: #7c1a1a;
-    font-weight: 500;
-    font-size: medium;
-    font-family: "Zeyada", cursive;
-    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    font-size: 16px;
     font-style: normal;
 }
 
@@ -329,11 +338,12 @@
 
 .popular-dish-explore-full-menu {
     margin-top: 10px;
+    margin-bottom: 30px;
     padding: 14px;
     border: 2px solid transparent;
     background-color: #1B5E20;
     border-radius: 20px;
-    font-size: 17px;
+    font-size: 22px;
     color: white;
     font-weight: 600;
     font-family: "Dancing Script", cursive;
@@ -345,4 +355,109 @@
     background-color: transparent;
     border: 2px solid #1B5E20;
     color: #1B5E20;
+}
+
+/* Video Section */
+
+.video-section {
+    background-image: url(images/video-section-background.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-section-heading {
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #1B5E20;
+    margin-top: 80px;
+}
+
+.video-section-paragraph {
+    font-family: "Oregano", cursive;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 20px;
+    color: #1B5E20;
+}
+
+.video-content {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 40px;
+}
+
+.video-section-left-content {
+    height: 600px;
+    width: 500px;
+}
+
+.video-section-right-content {
+    height: 600px;
+    width: 500px;
+}
+
+.video-content video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.video-section-center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.video-section-center-content h1 {
+    font-family: "Spicy Rice", serif;
+    font-style: normal;
+    color: #1B5E20;
+    font-weight: 300;
+    font-size: 47px;
+}
+
+.video-section-center-content p {
+    text-align: center;
+    font-family: "Story Script", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #1B5E20;
+}
+
+.video-section-center-content p span {
+    font-family: "Spicy Rice", serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    color: #1B5E20;
+}
+
+.made-with-love {
+    margin-top: 10px;
+    padding: 12px;
+    border: 2px solid #1B5E20;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    color: #1B5E20;
+}
+
+.video-section-heading-2 {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1B5E20;
+    font-weight: 300;
+    font-size: 25px;
 }
