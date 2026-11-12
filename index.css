@@ -85,7 +85,6 @@
     background-repeat: no-repeat;
     background-position: right center;
     padding-left: 100px;
-    animation: floatingBackground 5s ease-in-out infinite alternate;
 }
 
 .hero-section-list {
@@ -118,6 +117,7 @@
     font-weight: 900;
     font-size: 60px;
     margin-top: 0px;
+    animation: fadeInSlideUp 0.8s ease-out 0s both;
 }
 
 .hero-content h3 {
@@ -127,6 +127,7 @@
     font-size: 30px;
     font-weight: 900;
     color: #1B5E20;
+    animation: fadeInSlideUp 0.8s ease-out 0.2s both;
 }
 
 .hero-content h4 {
@@ -136,6 +137,7 @@
     font-weight: 900;
     font-size: 20px;
     color: #1B5E20;
+    animation: fadeInSlideUp 0.8s ease-out 0.4s both;
 }
 
 .hero-content p {
@@ -144,12 +146,14 @@
     font-weight: 400;
     font-size: 15px;
     font-style: normal;
+    animation: fadeInSlideUp 0.8s ease-out 0.6s both;
 }
 
 .hero-content-button {
     display: flex;
     align-items: center;
     gap: 30px;
+    animation: fadeInSlideUp 0.8s ease-out 0.8s both;
 }
 
 .explore-menu {
@@ -193,15 +197,14 @@
     color: white;
 }
 
-@keyframes floatingBackground {
-    0% {
-        transform: translateY(0px);
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -460,4 +463,104 @@
     color: #1B5E20;
     font-weight: 300;
     font-size: 25px;
+}
+
+
+/* Customer Reviews Section */
+
+.customer-review-section {
+    background-image: url(images/customer-images/customer-background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.customer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.customer-heading h2 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: #1B5E20;
+}
+
+.customer-heading p {
+    font-family: "Oregano", cursive;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 20px;
+    color: #1B5E20;
+}
+
+.customer-review {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.customer-review-track {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.customer-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.customer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customer-review-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: calc((100% - 60px) / 3);
+    flex-shrink: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.customer-review-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.customer-review-card h3 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-size: 30px;
+    color: #1B5E20;
+}
+
+.customer-review-card p {
+    text-align: center;
+    font-family: "Oregano", cursive;
+    font-weight: 550;
+    font-size: 20px;
+    color: #1B5E20;
+}
+
+.customer-review-card span {
+    color: rgb(255, 196, 0);
+    font-weight: 900;
+    font-size: 20px;
+    font-style: normal;
 }
